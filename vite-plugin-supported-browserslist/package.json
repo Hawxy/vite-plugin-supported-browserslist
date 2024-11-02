@@ -1,0 +1,49 @@
+{
+  "name": "vite-plugin-supported-browserslist",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A Vite plugin for checking if a users browser is compatible via browserslist",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hawxy/vite-plugin-supported-browserslist.git"
+  },
+  "author": {
+    "name": "JT",
+    "email": "Hawxy@users.noreply.github.com",
+    "organization": false
+  },
+  "keywords": [
+    "browserslist",
+    "supported",
+    "browser",
+    "vite"
+  ],
+  "license": "Apache-2.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./web": "./dist/web.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "browserslist-useragent-regexp": "^4.1.3"
+  },
+  "peerDependencies": {
+    "browserslist": ">=4.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.6",
+    "browserslist": "^4.24.2",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.10",
+    "vite-plugin-dts": "^4.3.0"
+  }
+}
