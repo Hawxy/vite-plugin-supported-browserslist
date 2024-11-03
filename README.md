@@ -31,8 +31,19 @@ You can configure the browserslist as part of the plugin options or use a tradit
 
 To check the current browser at runtime, import `isSupportedBrowser` from `vite-plugin-supported-browserslist/web`:
 
-```ts
+```vue
+<script setup lang="ts">
 import { isSupportedBrowser } from 'vite-plugin-supported-browserslist/web';
 
 const isSupported = isSupportedBrowser();
+</script>
+
+<template>
+  <div class="alert alert-bad" v-if="!isSupported">
+    This website may not work correctly with an outdated browser. Please update as soon as possible.
+  </div>
+  <div class="alert alert-good" v-else>
+    Yay! Your browser is supported!
+  </div>
+</template>
 ```
