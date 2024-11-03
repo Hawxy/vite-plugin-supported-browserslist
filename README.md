@@ -1,6 +1,6 @@
 # vite-plugin-supported-browserslist
 
-![NPM Version](https://img.shields.io/npm/v/vite-plugin-supported-browserslist)
+[![NPM Version](https://img.shields.io/npm/v/vite-plugin-supported-browserslist)](https://www.npmjs.com/package/vite-plugin-supported-browserslist)
 
 This is a small Vite plugin (~1.2kB) that permits the use of `.browserslistrc` file  (or any other configuration method) to generate a list of supported browsers to be checked at runtime.
 
