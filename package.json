@@ -25,6 +25,7 @@
     ".": "./dist/index.js",
     "./web": "./dist/web.js"
   },
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
