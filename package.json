@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-supported-browserslist",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "A Vite plugin for checking if a users browser is compatible at runtime via browserslist",
   "repository": {
