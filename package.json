@@ -2,7 +2,7 @@
   "name": "vite-plugin-supported-browserslist",
   "version": "1.0.0",
   "type": "module",
-  "description": "A Vite plugin for checking if a users browser is compatible via browserslist",
+  "description": "A Vite plugin for checking if a users browser is compatible at runtime via browserslist",
   "repository": {
     "type": "git",
     "url": "https://github.com/Hawxy/vite-plugin-supported-browserslist.git"
