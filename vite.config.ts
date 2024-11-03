@@ -1,10 +1,9 @@
 import { defineConfig } from 'vite';
 import path from 'path';
 import dts from 'vite-plugin-dts'
-import Inspect from 'vite-plugin-inspect'
 
 export default defineConfig({
-    plugins: [dts(), Inspect()],
+    plugins: [dts()],
     build: {
         minify: false,
         lib: {
@@ -12,7 +11,7 @@ export default defineConfig({
             formats: ['es'],
             fileName: (_, entryName) => {
                 return `${entryName}.js`;
-              },
+            },
         },
         rollupOptions: {
             external: ['browserslist-useragent-regexp', 'virtual:vite-plugin-supported-browserslist', 'vite'],
