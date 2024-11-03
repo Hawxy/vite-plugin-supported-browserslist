@@ -1,6 +1,6 @@
 # vite-plugin-supported-browserslist
 
-This is a small Vite plugin that permits the use of `.browserslistrc` file  (or any other configuration method) to generate a list of supported browsers to be checked at runtime.
+This is a small Vite plugin (~1.2kB) that permits the use of `.browserslistrc` file  (or any other configuration method) to generate a list of supported browsers to be checked at runtime.
 
 The intention is that the plugin can be used to show a custom message/banner to users using browsers you consider undesirable or unsupported.
 

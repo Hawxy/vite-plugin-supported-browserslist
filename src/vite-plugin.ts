@@ -2,11 +2,13 @@ import type { Plugin } from "vite"
 import { getUserAgentRegex, type UserAgentRegexOptions } from "browserslist-useragent-regexp"
 
 export default function supportedBrowser(options?: UserAgentRegexOptions): Plugin {
-    const virtualModuleId = 'virtual:vite-plugin-supported-browserslist'
+    const packageName = 'vite-plugin-supported-browserslist';
+
+    const virtualModuleId = `virtual:${packageName}`
     const resolvedVirtualModuleId = '\0' + virtualModuleId
 
     return {
-        name: 'virtual:vite-plugin-supported-browserslist',
+        name: virtualModuleId,
         resolveId(id) {
             if (id === virtualModuleId) {
                 return resolvedVirtualModuleId
@@ -25,13 +27,13 @@ export default function supportedBrowser(options?: UserAgentRegexOptions): Plugi
         config(__, _) {
             return {
                 optimizeDeps: {
-                    exclude: ['vite-plugin-supported-browserslist']
+                    exclude: [packageName]
                 },
                 ssr: {
                     optimizeDeps: {
-                        exclude: ['vite-plugin-supported-browserslist']
+                        exclude: [packageName]
                     },
-                    noExternal: ['vite-plugin-supported-browserslist']
+                    noExternal: [packageName]
                 }
             }
         },
